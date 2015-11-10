@@ -31,18 +31,18 @@ public class Pathermaker : MonoBehaviour {
         {
             float rand = Random.value;
             //float rotation = 0f;
-			Vector3 direction = new Vector3(5f, 0f, 0f);
+			Vector3 direction = new Vector3(10f, 0f, 0f);
             if(rand < .25f)
             {
-				direction = new Vector3(5f, 0f, 0f);
+				direction = new Vector3(10f, 0f, 0f);
             }
             else if (rand < .5f)
             {
-				direction = new Vector3(0f, 0f, 5f);
+				direction = new Vector3(0f, 0f, 10f);
             }
 			else if (rand < .75f)
 			{
-				direction = new Vector3(0f, 0f, -5f);
+				direction = new Vector3(0f, 0f, -10f);
 			}
             else if (rand > instantiationChance)
             {

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Restart : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class Restart : MonoBehaviour
 
     public void restart()
     {
-
+        Maker.mouseList = new List<GameObject>();
+        Maker.catList = new List<GameObject>();
         Application.LoadLevel(0);
     }
 }

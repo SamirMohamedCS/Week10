@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		// Add a physics force going forward (to always move forward)
-		GetComponent<Rigidbody>().velocity = transform.forward * 10f + Physics.gravity;
+		GetComponent<Rigidbody>().velocity = transform.forward * 50f + Physics.gravity;
 
 		// declare a var of type Ray, called "moveRay" that starts from [current position] and goes [current forward direction]
 		Ray ray = new Ray( transform.position, transform.forward );
